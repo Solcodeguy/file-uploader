@@ -12,6 +12,7 @@ class SearchBox extends Component {
             /> <
             input placeholder = "Search term"
             value = { this.props.searchTerm }
+            onChange = { e => this.props.handleUpdate(e.target.value) }
             /> <
             /div>   
         );

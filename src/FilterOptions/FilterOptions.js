@@ -16,6 +16,7 @@ class FilterOptions extends Component {
             id = "filter_all"
             name = "filter"
             checked = { filterOption === "All" }
+            onChange = { e => this.props.handleFilterChange(e.target.value) }
             />
             All <
             /label> <
@@ -29,6 +30,7 @@ class FilterOptions extends Component {
             id = "filter_uploaded"
             name = "filter"
             checked = { filterOption === "Uploaded" }
+            onChange = { e => this.props.handleFilterChange(e.target.value) }
             />
             Uploaded <
             /label> <
@@ -42,6 +44,7 @@ class FilterOptions extends Component {
             id = "filter_synced"
             name = "filter"
             checked = { filterOption === "Synced" }
+            onChange = { e => this.props.handleFilterChange(e.target.value) }
             />
             Synced <
             /label> <
@@ -55,6 +58,7 @@ class FilterOptions extends Component {
             id = "filter_new"
             name = "filter"
             checked = { filterOption === "New" }
+            onChange = { e => this.props.handleFilterChange(e.target.value) }
             />
             New <
             /label> <
