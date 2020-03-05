@@ -14,10 +14,10 @@ class SearchBar extends Component {
             /div> <
             div className = "SearchBar__controls" >
             <
-            SearchBox / >
-            <
-            FilterOptions / >
-            <
+            SearchBox searchTerm = { this.props.searchTerm }
+            /> <
+            FilterOptions filterOption = { this.props.filterOption }
+            /> <
             /div> <
             /div>
         );

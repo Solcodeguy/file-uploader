@@ -3,6 +3,7 @@ import './FilterOptions.css';
 
 class FilterOptions extends Component {
     render() {
+        const { filterOption } = this.props;
         return ( <
             div className = "FilterOptions" >
             <
@@ -13,7 +14,9 @@ class FilterOptions extends Component {
             input type = "radio"
             value = "All"
             id = "filter_all"
-            name = "filter" / >
+            name = "filter"
+            checked = { filterOption === "All" }
+            />
             All <
             /label> <
             /div> <
@@ -24,7 +27,9 @@ class FilterOptions extends Component {
             input type = "radio"
             value = "Uploaded"
             id = "filter_uploaded"
-            name = "filter" / >
+            name = "filter"
+            checked = { filterOption === "Uploaded" }
+            />
             Uploaded <
             /label> <
             /div> <
@@ -35,7 +40,9 @@ class FilterOptions extends Component {
             input type = "radio"
             value = "Synced"
             id = "filter_synced"
-            name = "filter" / >
+            name = "filter"
+            checked = { filterOption === "Synced" }
+            />
             Synced <
             /label> <
             /div> <
@@ -46,7 +53,9 @@ class FilterOptions extends Component {
             input type = "radio"
             value = "New"
             id = "filter_new"
-            name = "filter" / >
+            name = "filter"
+            checked = { filterOption === "New" }
+            />
             New <
             /label> <
             /div> <
